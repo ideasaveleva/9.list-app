@@ -37,9 +37,6 @@ export default function App() {
 					<ListItem el={item} deleteHandler={deleteHandler}/>
 				)}/>
 			</View>
-			<View>
-				
-			</View>
     </View>
   );
 }
