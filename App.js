@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text} from 'react-native';
-import { gStyle } from './styles/style';
+import { StyleSheet } from 'react-native';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
+import MainStack from './navigate';
+
 
 
 
@@ -17,10 +18,7 @@ export default function App() {
 
 	if(font){
 		return (
-			<View style={gStyle.main}>
-				<Text style={gStyle.title}>Hello!</Text>
-				<Text>Привет</Text>
-			</View>
+			<MainStack />
 		);
 	} else {
 		return (
